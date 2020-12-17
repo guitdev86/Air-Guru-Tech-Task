@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>Seathustler</title>
+</head>
+<body>
+    <div class="menu-dropdown" id="menu-dropdown">
+        <div class="close-btn">
+            <button id="close-btn">
+                <div class="close-cross">
+                    <div class="close-cross-line" id="cross-line-1"></div>
+                    <div class="close-cross-line" id="cross-line-2"></div>
+                </div>
+            </button>
+        </div>
+        <div class="menu-list">
+            <a href="">Home</a>
+            <a href="">FAQ</a>
+            <a href="">Deals</a>
+            <a href="">Contact Us</a>
+            <a href="">News!</a>
+        </div>
+    </div>
+    <nav>
+        <div class="menu" >
+            <div class="menu-left">
+                <button id="menu-btn">
+                    <div class="burger-icon">
+                        <div class="burger-icon-line" id="burger-line-1"></div>
+                        <div class="burger-icon-line" id="burger-line-2"></div>
+                        <div class="burger-icon-line" id="burger-line-3"></div>
+                    </div>
+                </button>
+                <img class="image-logo" src="./img/logo.png" alt="logo">    
+            </div>
+            <div class="menu-right">
+                <a class="subscribe-btn" href="#top">
+                    Subscribe Now
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="conf-notif" id="success-msg">&#x2713 Thank you! You have been subscribed!</div>
+    <div class="unconf-notif" id="failure-msg">Please enter valid email</div>
+    <div class="main-section" id="top">
+        <div class="main-title">Grab Flight Deals While They're Hot</div>
+        <div class="main-title-email">
+            <i class="far fa-envelope main-title-email-envelope"></i>
+            <input class="main-title-email-input" type="email" placeholder="Enter Your E-Mail" id="email">
+        </div>
+        <button class="email-submit-btn" id="subscribe-btn">Subscribe For Best Deals</button>
+    </div>
+    <div class="calculations">
+        <div class="calculations-title">Calculate Your Savings!</div>
+        <div class="calculations-sliders">
+            <div class="calculations-subtitle">How many times do you plan to travel in the next 12 months?</div>
+            <div class="calculations-number" id="times">2</div>
+            <div class="calculations-slider">
+                <button class="calculations-slider-minus" id="slider-minus-1"><i class="fas fa-minus"></i></button>
+                    <div class="calculations-slider-line">
+                        <input class="times-slider" id="slider1" type="range" min="0" max="200" value="2">
+                    </div>
+                <button class="calculations-slider-plus" id="slider-plus-1"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="calculations-subtitle">How many people will be travelling (including you)?</div>
+            <div class="calculations-number" id="people">3</div>
+            <div class="calculations-slider">
+                <button class="calculations-slider-minus" id="slider-minus-2"><i class="fas fa-minus"></i></button>
+                    <div class="calculations-slider-line">
+                        <input class="times-slider" id="slider2" type="range" min="1" max="10" value="3">
+                    </div>
+                <button class="calculations-slider-plus" id="slider-plus-2"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="calculations-subtitle">Are you a member of SeatHustler.com?</div>
+            <div id="">
+                <label class="selector-radio-title" for="selector-1" ><input class="selector-radio" type="radio" name="selector" id="selector-radio-true" value="true" checked> Yes, I love cheap flights</label>
+                <label class="selector-radio-title" for="selector-2"><input class="selector-radio" type="radio" name="selector" id="selector-radio-false" value="false"> No, I don’t</label>
+            </div>    
+            <div class="savings">
+                <img class="savings-line" src="./img/line.png" alt="">
+                <div class="savings-title">Your total savings</div>
+                <div class="result">$<span id="result"></span></div>
+                <a class="savings-btn" href="#top">&#x2713 Start Saving</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-email">
+            <div class="">Want to reach us?</div>
+            <a href="url">hi@seathustler.com</a>
+        </div>
+        <div class="footer-router">
+            <div class="footer-router-item">Cheap Flights</div>
+            <div class="footer-router-item">Save Up To $550</div>
+            <div class="footer-router-item">Members Love Us</div>
+            <div class="footer-router-item">About Us</div>
+        </div>
+        <div class="footer-copyright">@ 2020 SeatHustler.com</div>
+    </footer>
+</body>
+<script src="./js/keys.js"></script>
+<script src="./js/script.js"></script>
+</html>
