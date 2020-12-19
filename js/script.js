@@ -53,8 +53,8 @@ menuCloseButton.addEventListener("mouseenter", () => {
 })
 
 menuCloseButton.addEventListener("mouseleave", () => {
-    document.getElementById('cross-line-1').style.transform = 'rotate(0deg)';
-    document.getElementById('cross-line-2').style.transform = 'rotate(0deg)';
+    document.getElementById('cross-line-1').style.transform = 'rotate(-45deg)';
+    document.getElementById('cross-line-2').style.transform = 'rotate(45deg)';
 })
 
 // FORMULA SECTION
@@ -90,13 +90,13 @@ removePeople.addEventListener('click', () => {
     }
 })
 
-slider1.onchange = function() {
+slider1.oninput = function() {
     timesTotal = slider1.value;
     times.innerHTML = timesTotal;
     result.innerHTML = calculateResultValue(timesTotal, peopleTotal, isMember);
 }
 
-slider2.onchange = function() {
+slider2.oninput = function() {
     peopleTotal = slider2.value;
     people.innerHTML = peopleTotal;
     result.innerHTML = calculateResultValue(timesTotal, peopleTotal, isMember);
